@@ -11,6 +11,11 @@
 		667D279B26E5902D005F245B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D279A26E5902D005F245B /* ContentView.swift */; };
 		667D279D26E5902E005F245B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667D279C26E5902E005F245B /* Assets.xcassets */; };
 		667D27A026E5902E005F245B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667D279F26E5902E005F245B /* Preview Assets.xcassets */; };
+		667D27AC26E59192005F245B /* BigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D27AB26E59192005F245B /* BigButton.swift */; };
+		667D27AE26E59199005F245B /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D27AD26E59199005F245B /* QuestionView.swift */; };
+		667D27B026E591A4005F245B /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D27AF26E591A4005F245B /* QuestionModel.swift */; };
+		667D27B226E591B3005F245B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D27B126E591B3005F245B /* ModelData.swift */; };
+		667D27B426E5922E005F245B /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 667D27B326E5922E005F245B /* questions.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		667D279C26E5902E005F245B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		667D279F26E5902E005F245B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		667D27A126E5902E005F245B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667D27AB26E59192005F245B /* BigButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigButton.swift; sourceTree = "<group>"; };
+		667D27AD26E59199005F245B /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		667D27AF26E591A4005F245B /* QuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		667D27B126E591B3005F245B /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		667D27B326E5922E005F245B /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,11 @@
 		667D279726E5902D005F245B /* LearnMusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				667D27B326E5922E005F245B /* questions.json */,
+				667D27A726E5915E005F245B /* Buttons */,
+				667D27A926E5916D005F245B /* Models */,
+				667D27AA26E5917B005F245B /* Utils */,
+				667D27A826E59165005F245B /* Views */,
 				667D279826E5902D005F245B /* LearnMusicAppApp.swift */,
 				667D279A26E5902D005F245B /* ContentView.swift */,
 				667D279C26E5902E005F245B /* Assets.xcassets */,
@@ -67,6 +82,38 @@
 				667D279F26E5902E005F245B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		667D27A726E5915E005F245B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				667D27AB26E59192005F245B /* BigButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		667D27A826E59165005F245B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				667D27AD26E59199005F245B /* QuestionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		667D27A926E5916D005F245B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				667D27AF26E591A4005F245B /* QuestionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		667D27AA26E5917B005F245B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				667D27B126E591B3005F245B /* ModelData.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667D27B426E5922E005F245B /* questions.json in Resources */,
 				667D27A026E5902E005F245B /* Preview Assets.xcassets in Resources */,
 				667D279D26E5902E005F245B /* Assets.xcassets in Resources */,
 			);
@@ -138,8 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667D27AE26E59199005F245B /* QuestionView.swift in Sources */,
 				667D279B26E5902D005F245B /* ContentView.swift in Sources */,
 				667D279926E5902D005F245B /* LearnMusicAppApp.swift in Sources */,
+				667D27AC26E59192005F245B /* BigButton.swift in Sources */,
+				667D27B026E591A4005F245B /* QuestionModel.swift in Sources */,
+				667D27B226E591B3005F245B /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
