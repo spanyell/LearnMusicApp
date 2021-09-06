@@ -3,7 +3,7 @@
     "id": 1,
     "question": "What is this note?",
     "answers": "A,B,Middle C,F",
-    "correctAnswer": "F",
+    "correctAnswer": 3,
     "notePicture": "trebleF4",
     "noteTone": "F4Tone"
   },
@@ -11,15 +11,15 @@
     "id": 2,
     "question": "What is this note?",
     "answers": "C sharp,D,A,E",
-    "correctAnswer": "C sharp",
+    "correctAnswer": 0,
     "notePicture": "trebleCSharp4",
-    "noteTone": "F4Tone"
+    "noteTone": "CSharp4Tone"
   },
   {
     "id": 3,
     "question": "What is this note?",
     "answers": "B,E,A,G",
-    "correctAnswer": "A",
+    "correctAnswer": 2,
     "notePicture": "trebleA4",
     "noteTone": "F4Tone"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "question": "What is this note?",
     "answers": "F,A,C,E",
-    "correctAnswer": "E",
+    "correctAnswer": 3,
     "notePicture": "trebleE4",
     "noteTone": "F4Tone"
   }

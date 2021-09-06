@@ -16,6 +16,11 @@
 		667D27B026E591A4005F245B /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D27AF26E591A4005F245B /* QuestionModel.swift */; };
 		667D27B226E591B3005F245B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667D27B126E591B3005F245B /* ModelData.swift */; };
 		667D27B426E5922E005F245B /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 667D27B326E5922E005F245B /* questions.json */; };
+		6690343E26E5C67E002972FE /* CorrectChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6690343D26E5C67E002972FE /* CorrectChoiceView.swift */; };
+		6690344026E5C6CC002972FE /* IncorrectChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6690343F26E5C6CC002972FE /* IncorrectChoiceView.swift */; };
+		6690344226E5C9D9002972FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6690344126E5C9D9002972FE /* Constants.swift */; };
+		6690344426E5CAD8002972FE /* PlayNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6690344326E5CAD8002972FE /* PlayNoteView.swift */; };
+		6690344626E5CF55002972FE /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6690344526E5CF55002972FE /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		667D27AF26E591A4005F245B /* QuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		667D27B126E591B3005F245B /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		667D27B326E5922E005F245B /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		6690343D26E5C67E002972FE /* CorrectChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectChoiceView.swift; sourceTree = "<group>"; };
+		6690343F26E5C6CC002972FE /* IncorrectChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncorrectChoiceView.swift; sourceTree = "<group>"; };
+		6690344126E5C9D9002972FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6690344326E5CAD8002972FE /* PlayNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNoteView.swift; sourceTree = "<group>"; };
+		6690344526E5CF55002972FE /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 		667D279726E5902D005F245B /* LearnMusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				6690344126E5C9D9002972FE /* Constants.swift */,
 				667D27B326E5922E005F245B /* questions.json */,
 				667D27A726E5915E005F245B /* Buttons */,
 				667D27A926E5916D005F245B /* Models */,
@@ -96,6 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				667D27AD26E59199005F245B /* QuestionView.swift */,
+				6690344326E5CAD8002972FE /* PlayNoteView.swift */,
+				6690343D26E5C67E002972FE /* CorrectChoiceView.swift */,
+				6690343F26E5C6CC002972FE /* IncorrectChoiceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				667D27B126E591B3005F245B /* ModelData.swift */,
+				6690344526E5CF55002972FE /* SoundManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -189,9 +204,14 @@
 				667D27AE26E59199005F245B /* QuestionView.swift in Sources */,
 				667D279B26E5902D005F245B /* ContentView.swift in Sources */,
 				667D279926E5902D005F245B /* LearnMusicAppApp.swift in Sources */,
+				6690344026E5C6CC002972FE /* IncorrectChoiceView.swift in Sources */,
+				6690344426E5CAD8002972FE /* PlayNoteView.swift in Sources */,
+				6690343E26E5C67E002972FE /* CorrectChoiceView.swift in Sources */,
 				667D27AC26E59192005F245B /* BigButton.swift in Sources */,
 				667D27B026E591A4005F245B /* QuestionModel.swift in Sources */,
 				667D27B226E591B3005F245B /* ModelData.swift in Sources */,
+				6690344626E5CF55002972FE /* SoundManager.swift in Sources */,
+				6690344226E5C9D9002972FE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
