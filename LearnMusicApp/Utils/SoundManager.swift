@@ -11,9 +11,9 @@ import Foundation
 class SoundManager: ObservableObject
 {
     static let shared = SoundManager()
-    
+
     @Published var player: AVAudioPlayer?
-    
+
     func playMusicFile(data: Data)
     {
         do
@@ -21,7 +21,8 @@ class SoundManager: ObservableObject
             player = try AVAudioPlayer(data: data, fileTypeHint: "mp3")
             player!.play()
         }
-        catch{
+        catch
+        {
             print(error.localizedDescription)
         }
     }

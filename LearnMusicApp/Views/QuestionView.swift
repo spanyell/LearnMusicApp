@@ -11,7 +11,7 @@ import AVKit
 struct QuestionView: View
 {
     var questionInfo: QuestionModel
-    @ObservedObject var soundManager = SoundManager()
+    @StateObject var soundManager = SoundManager()
     @State private var selectedChoice: Int = 0
     @State private var isCorrectChoice = false
     @State private var isIncorrectChoice = false
@@ -75,10 +75,10 @@ struct QuestionView: View
     }
 }
 
-struct QuestionView_Previews: PreviewProvider
-{
-    static var previews: some View
-    {
-        QuestionView(questionInfo: questionData[0])
-    }
-}
+//struct QuestionView_Previews: PreviewProvider
+//{
+//    static var previews: some View
+//    {
+//        QuestionView(questionInfo: ModelData[0])
+//    }
+//}

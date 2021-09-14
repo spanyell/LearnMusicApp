@@ -7,21 +7,27 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
+struct ContentView: View
+{
+    var body: some View
+    {
+        NavigationView
+        {
             NavigationLink(
-                destination: QuestionView(questionInfo: questionData[0]),
-                label: {
+                destination: QuestionView(questionInfo: questionData[UserDefaults.standard.integer(forKey: "question")]),
+                label:
+                {
                     Text("Take Quiz!")
                 })
-            .padding()
+                .padding()
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
+struct ContentView_Previews: PreviewProvider
+{
+    static var previews: some View
+    {
         ContentView()
     }
 }
