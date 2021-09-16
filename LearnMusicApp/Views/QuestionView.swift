@@ -58,7 +58,7 @@ struct QuestionView: View
                 .padding(.horizontal, 30)
                 .padding(.vertical, 1)
             }
-            CorrectChoiceView()
+            CorrectChoiceView(questionInfo: questionInfo)
                 .offset(y: isCorrectChoice ? 0 : -1000)
                 .animation(.spring(response: 0.7, dampingFraction: 0.6, blendDuration: 0))
                 .onTapGesture {

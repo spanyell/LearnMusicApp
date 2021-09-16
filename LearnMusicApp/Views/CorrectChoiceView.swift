@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CorrectChoiceView: View
 {
+    var questionInfo: QuestionModel
+
     var body: some View
     {
         let nextQuestion = getNextQuestion()
@@ -21,19 +23,26 @@ struct CorrectChoiceView: View
 
             VStack
             {
-                Text("That's music to my ears!")
-
-                //  Put code in here to ensure that the link is not displayed after the last question is answered correctly.
-                NavigationLink(
-                    destination: QuestionView(questionInfo: questionData[nextQuestion]),
-                    label:
-                    {
-                        Text("Next Question")
-                    })
-                    .padding()
+                // Once test is finished
+                if questionInfo.id == 5
+                {
+                    Text("The test is over")
+                }
+                else
+                {
+                    // During Test
+                    Text("That's music to my ears!")
+                    NavigationLink(
+                        destination: QuestionView(questionInfo: questionData[nextQuestion]),
+                        label:
+                        {
+                            Text("Next Question")
+                        })
+                        .padding()
+                }
             }
-            .navigationBarHidden(true)
         }
+        .navigationBarHidden(true)
     }
 
     func getNextQuestion() -> Int
@@ -44,12 +53,10 @@ struct CorrectChoiceView: View
     }
 }
 
-struct CorrectChoiceView_Previews: PreviewProvider
-{
-    static var previews: some View
-    {
-        CorrectChoiceView()
-    }
-}
-
-
+// struct CorrectChoiceView_Previews: PreviewProvider
+// {
+//    static var previews: some View
+//    {
+//        CorrectChoiceView()
+//    }
+// }
