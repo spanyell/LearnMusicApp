@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CorrectChoiceView: View
 {
-    @StateObject var stopWatchManager = StopWatchManager()
     var questionInfo: QuestionModel
+//    var timeElapsed: Double
 
 
     var body: some View
@@ -34,7 +34,7 @@ struct CorrectChoiceView: View
                 {
                     // During Test
                     Text("That's music to my ears!")
-                    Text("It took you \(String(format: "%.1f", stopWatchManager.secondsElapsed)) to get it.")
+                    Text("It took you X to get it.")
                     NavigationLink(
                         destination: QuestionView(questionInfo: questionData[nextQuestion]),
                         label:
