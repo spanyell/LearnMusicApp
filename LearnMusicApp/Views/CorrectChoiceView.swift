@@ -32,6 +32,7 @@ struct CorrectChoiceView: View
                     })
                     .padding()
             }
+            .navigationBarHidden(true)
         }
     }
 
