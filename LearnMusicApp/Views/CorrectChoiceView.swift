@@ -9,7 +9,9 @@ import SwiftUI
 
 struct CorrectChoiceView: View
 {
+    @StateObject var stopWatchManager = StopWatchManager()
     var questionInfo: QuestionModel
+
 
     var body: some View
     {
@@ -32,6 +34,7 @@ struct CorrectChoiceView: View
                 {
                     // During Test
                     Text("That's music to my ears!")
+                    Text("It took you \(String(format: "%.1f", stopWatchManager.secondsElapsed)) to get it.")
                     NavigationLink(
                         destination: QuestionView(questionInfo: questionData[nextQuestion]),
                         label:
@@ -51,6 +54,7 @@ struct CorrectChoiceView: View
 
         return UserDefaults.standard.integer(forKey: "question")
     }
+    
 }
 
 // struct CorrectChoiceView_Previews: PreviewProvider

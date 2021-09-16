@@ -12,10 +12,11 @@ struct QuestionView: View
 {
     var questionInfo: QuestionModel
     @StateObject var soundManager = SoundManager()
+    @ObservedObject var stopWatchManager = StopWatchManager()
     @State private var selectedChoice: Int = 0
     @State private var isCorrectChoice = false
     @State private var isIncorrectChoice = false
-    @State private var questionNumber: Int = 0
+    @State var questionTime = 0.0
     @State var gradient = [Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)), Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)), Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))]
     @State var startPoint = UnitPoint(x: 0, y: 0)
     @State var endPoint = UnitPoint(x: 0, y: 5)
@@ -41,21 +42,15 @@ struct QuestionView: View
             {
                 Text("\(questionInfo.id)")
                     .font(.footnote)
+                Text(String(format: "%.1f", stopWatchManager.secondsElapsed))
+                    .onAppear()
+                    {
+                        stopWatchManager.start()
+                    }
                 Text(questionInfo.question)
                     .font(.headline)
                     .padding()
                 PlayNoteView(questionInfo: questionInfo)
-//                HStack
-//                {
-//                    Image(systemName: "play")
-//                    Text("Play note")
-//                }
-//                .padding()
-//
-//                .onTapGesture
-//                {
-//                    soundManager.playMusicFile(data: NSDataAsset(name: "\(questionInfo.noteTone)")!.data)
-//                }
                 Image(questionInfo.notePicture)
                     .cornerRadius(10)
                     .overlay(RoundedRectangle(cornerRadius: 10)
@@ -81,6 +76,7 @@ struct QuestionView: View
                             if selectedChoice == questionInfo.correctAnswer
                             {
                                 isCorrectChoice = true
+                                stopWatchManager.pause()
                             }
                             else
                             {
@@ -106,6 +102,7 @@ struct QuestionView: View
                 {
                     isIncorrectChoice.toggle()
                 }
+            
         }
     }
 }

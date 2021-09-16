@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View
 {
+    @ObservedObject var stopWatchManager = StopWatchManager()
     var body: some View
     {
         NavigationView

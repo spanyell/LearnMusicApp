@@ -21,6 +21,8 @@
 		6690344426E5CAD8002972FE /* PlayNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6690344326E5CAD8002972FE /* PlayNoteView.swift */; };
 		6690344626E5CF55002972FE /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6690344526E5CF55002972FE /* SoundManager.swift */; };
 		66E39DCC26F1213B004DCCB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E39DCB26F1213B004DCCB6 /* Constants.swift */; };
+		66E39DCE26F3A47C004DCCB6 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E39DCD26F3A47C004DCCB6 /* TimerView.swift */; };
+		66E39DD026F3A6B3004DCCB6 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E39DCF26F3A6B3004DCCB6 /* UtilityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		6690344326E5CAD8002972FE /* PlayNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayNoteView.swift; sourceTree = "<group>"; };
 		6690344526E5CF55002972FE /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		66E39DCB26F1213B004DCCB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		66E39DCD26F3A47C004DCCB6 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		66E39DCF26F3A6B3004DCCB6 /* UtilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 				6690344326E5CAD8002972FE /* PlayNoteView.swift */,
 				6690343D26E5C67E002972FE /* CorrectChoiceView.swift */,
 				6690343F26E5C6CC002972FE /* IncorrectChoiceView.swift */,
+				66E39DCD26F3A47C004DCCB6 /* TimerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			children = (
 				667D27B126E591B3005F245B /* ModelData.swift */,
 				6690344526E5CF55002972FE /* SoundManager.swift */,
+				66E39DCF26F3A6B3004DCCB6 /* UtilityManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -207,8 +213,10 @@
 				667D279926E5902D005F245B /* LearnMusicAppApp.swift in Sources */,
 				6690344026E5C6CC002972FE /* IncorrectChoiceView.swift in Sources */,
 				6690344426E5CAD8002972FE /* PlayNoteView.swift in Sources */,
+				66E39DCE26F3A47C004DCCB6 /* TimerView.swift in Sources */,
 				6690343E26E5C67E002972FE /* CorrectChoiceView.swift in Sources */,
 				667D27AC26E59192005F245B /* BigButton.swift in Sources */,
+				66E39DD026F3A6B3004DCCB6 /* UtilityManager.swift in Sources */,
 				667D27B026E591A4005F245B /* QuestionModel.swift in Sources */,
 				667D27B226E591B3005F245B /* ModelData.swift in Sources */,
 				6690344626E5CF55002972FE /* SoundManager.swift in Sources */,

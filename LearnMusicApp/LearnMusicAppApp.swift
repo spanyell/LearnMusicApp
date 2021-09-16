@@ -29,6 +29,7 @@ class AppDelegate: NSObject, UIApplicationDelegate
     {
         
         UserDefaults.standard.set(0, forKey: "question")
+        UserDefaults.standard.set(0, forKey: "totalQuestionTime")
 
         return true
     }
