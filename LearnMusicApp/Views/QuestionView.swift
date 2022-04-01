@@ -12,7 +12,7 @@ struct QuestionView: View
 {
     var questionInfo: QuestionModel
     @StateObject var soundManager = SoundManager()
-    @ObservedObject var stopWatchManager = StopWatchManager()
+//    @StateObject var stopWatchManager = StopWatchManager()
     @State private var selectedChoice: Int = 0
     @State private var isCorrectChoice = false
     @State private var isIncorrectChoice = false
@@ -42,11 +42,11 @@ struct QuestionView: View
             {
                 Text("\(questionInfo.id)")
                     .font(.footnote)
-                Text(String(format: "%.1f", stopWatchManager.secondsElapsed))
-                    .onAppear()
-                    {
-                        stopWatchManager.start()
-                    }
+//                Text(String(format: "%.1f", stopWatchManager.secondsElapsed))
+//                    .onAppear()
+//                    {
+//                        stopWatchManager.start()
+//                    }
                 Text(questionInfo.question)
                     .font(.headline)
                     .padding()
@@ -76,7 +76,7 @@ struct QuestionView: View
                             if selectedChoice == questionInfo.correctAnswer
                             {
                                 isCorrectChoice = true
-                                stopWatchManager.pause()
+//                                stopWatchManager.pause()
                             }
                             else
                             {
